@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 @font-face {
   font-family: Metro;
   font-display: swap;
@@ -6,6 +7,7 @@
   font-weight: 400;
   font-style: normal;
 }
+
 @font-face {
   font-family: Orpheus;
   font-display: swap;
@@ -13,32 +15,41 @@
   font-weight: 400;
   font-style: normal;
 }
+
 /*Обнуление*/
+
 * {
   padding: 0;
   margin: 0;
   border: 0;
 }
 
-*, *:before, *:after {
-  -moz-box-sizing: border-box;
+*,
+*:before,
+*:after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-:focus, :active {
+:focus,
+:active {
   outline: none;
 }
 
-a:focus, a:active {
+a:focus,
+a:active {
   outline: none;
 }
 
-nav, footer, header, aside {
+nav,
+footer,
+header,
+aside {
   display: block;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
   font-size: 100%;
@@ -49,7 +60,9 @@ html, body {
   -webkit-text-size-adjust: 100%;
 }
 
-input, button, textarea {
+input,
+button,
+textarea {
   font-family: inherit;
 }
 
@@ -66,7 +79,8 @@ button::-moz-focus-inner {
   border: 0;
 }
 
-a, a:visited {
+a,
+a:visited {
   text-decoration: none;
 }
 
@@ -82,22 +96,34 @@ img {
   vertical-align: top;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-size: inherit;
   font-weight: 400;
 }
 
 /*--------------------*/
+
 body {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background: url(../img/2.webp) round;
   font-family: Metro;
 }
 
 .nav-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  background: -webkit-gradient(linear, left top, left bottom, from(hwb(184 7% 7%)), color-stop(rgba(97, 45, 201, 0.7)), to(hwb(184 7% 7%))), -webkit-gradient(linear, left top, right top, from(rgb(48, 48, 201)), color-stop(rgba(113, 45, 201, 0.7)), to(hwb(238 19% 21%)));
   background: linear-gradient(180deg, hwb(184 7% 7%), rgba(97, 45, 201, 0.7), hwb(184 7% 7%)), linear-gradient(90deg, rgb(48, 48, 201), rgba(113, 45, 201, 0.7), hwb(238 19% 21%));
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .menu-image img {
@@ -110,9 +136,11 @@ body {
   margin-right: 20px;
   padding: 10px 0px 10px 0px;
 }
+
 .nav-header a .phone {
   margin-left: 70px;
 }
+
 .nav-header a img {
   width: 50px;
 }
@@ -123,6 +151,7 @@ body {
   padding-top: 5px;
   font-size: 20px;
   display: block;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(hsla(289, 58%, 15%, 0.723)), to(rgba(134, 9, 55, 0.8862745098)));
   background-image: linear-gradient(hsla(289, 58%, 15%, 0.723), rgba(134, 9, 55, 0.8862745098));
   height: 30px;
   color: #fb00ff;
@@ -133,29 +162,25 @@ body {
     -webkit-transform: translate(0, 0);
     transform: translate(0, 0);
   }
+
   100% {
     -webkit-transform: translate(-100%, 0);
     transform: translate(-100%, 0);
   }
 }
-@-moz-keyframes scroll {
-  0% {
-    -moz-transform: translate(0, 0);
-    transform: translate(0, 0);
-  }
-  100% {
-    -moz-transform: translate(-100%, 0);
-    transform: translate(-100%, 0);
-  }
-}
+
 @keyframes scroll {
   0% {
-    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
   }
+
   100% {
-    transform: translate(-100%, 0);
+    -webkit-transform: translate(-100%, 0);
+            transform: translate(-100%, 0);
   }
 }
+
 .marquee {
   display: block;
   width: 100%;
@@ -167,7 +192,6 @@ body {
   display: inline-block;
   padding-left: 100%;
   -webkit-animation: scroll 15s infinite linear;
-  -moz-animation: scroll 10s infinite linear;
   animation: scroll 15s infinite linear;
 }
 
@@ -187,8 +211,13 @@ body {
 ul {
   margin-left: 260px;
   width: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 button {
@@ -206,6 +235,7 @@ button {
   cursor: pointer;
   color: #33b4eb;
 }
+
 .list-link:hover:active {
   color: #00fff7;
 }
@@ -232,7 +262,8 @@ button {
 }
 
 .nav-header img:hover {
-  box-shadow: 5px 0px 39px 22px #33b4eb;
+  -webkit-box-shadow: 5px 0px 39px 22px #33b4eb;
+          box-shadow: 5px 0px 39px 22px #33b4eb;
   background-color: #00fff7;
   border-radius: 50%;
 }
@@ -240,11 +271,13 @@ button {
 .menu-image-face:hover {
   border: 2px solid #00fff7;
   cursor: pointer;
-  box-shadow: 5px 0px 60px 22px rgba(51, 180, 235, 0.6509803922);
+  -webkit-box-shadow: 5px 0px 60px 22px rgba(51, 180, 235, 0.6509803922);
+          box-shadow: 5px 0px 60px 22px rgba(51, 180, 235, 0.6509803922);
 }
 
 .modal {
-  box-shadow: 5px 0px 60px 22px #33b4eb;
+  -webkit-box-shadow: 5px 0px 60px 22px #33b4eb;
+          box-shadow: 5px 0px 60px 22px #33b4eb;
   display: none;
   position: fixed;
   z-index: 1;
@@ -282,6 +315,7 @@ button {
   font-size: 30px;
   font-weight: bold;
 }
+
 .close:hover {
   cursor: pointer;
   color: #00fff7;
@@ -292,6 +326,8 @@ button {
 }
 
 .portfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 70px 0px 0px 0px;
 }
@@ -311,6 +347,7 @@ button {
   border-radius: 10%;
   height: 100%;
 }
+
 .p-img:hover {
   border: 3px solid #00fff7;
 }
@@ -332,6 +369,7 @@ hr {
   color: #000;
   cursor: pointer;
 }
+
 .button:hover {
   color: #00fff7;
   background-color: rgba(251, 0, 255, 0.6862745098);
@@ -340,6 +378,7 @@ hr {
 .portfolio-work {
   position: relative;
 }
+
 .portfolio-work:hover::after {
   content: "CHECK PREVIEW";
   position: absolute;
@@ -352,6 +391,7 @@ hr {
   font-weight: 600;
   cursor: pointer;
 }
+
 .portfolio-work:hover::before {
   content: "";
   border: 3px solid #00fff7;
@@ -388,6 +428,7 @@ hr {
   font-size: 30px;
   font-weight: bold;
 }
+
 .close-two:hover {
   cursor: pointer;
   color: #00fff7;
@@ -411,8 +452,10 @@ hr {
   font-size: 22px;
   color: #000;
   cursor: pointer;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
+
 .btn-top:hover {
   background-color: #00fff7;
 }
@@ -443,6 +486,7 @@ hr {
   font-size: 30px;
   font-weight: bold;
 }
+
 .close-three:hover {
   cursor: pointer;
   color: #00fff7;
