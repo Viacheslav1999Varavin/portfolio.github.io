@@ -100,19 +100,20 @@ ul {
    flex-direction: column;
 }
 button {
-   width: 0;
    display: inline-block;
    margin: 20px;
    text-transform: uppercase;
    font-size: 20px;
    font-weight: 500;
    letter-spacing: 3px;
-   color: rgba(221, 0, 255, 0.895);
+   color: #dd00ffe4;
+   background-color: rgba(0, 0, 0, 0);
 }
 
 .list-link:hover {
    cursor: pointer;
    color: #33b4eb;
+   // box-shadow: 5px 0px 60px 22px #33b4eba6;
    &:active {
       color: #00fff7;
    }
@@ -291,16 +292,15 @@ hr {
 }
 .btn-top {
    display: none;
-   width: 50px;
    background-color: #00fff792;
    position: fixed;
-   width: 60px;
-   height: 60px;
-   bottom: 45px;
-   left: 540px;
-   border-radius: 50%;
+   width: 100px;
+   height: 40px;
+   bottom: -17px;
+   right: 500px;
+   border: 3px solid #00fff7;
    text-align: center;
-   font-size: 22px;
+   font-size: 15px;
    color: #000;
    cursor: pointer;
    transition: 0.5s;

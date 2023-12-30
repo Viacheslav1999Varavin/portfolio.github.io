@@ -25,11 +25,21 @@ $(function () {
 
 
    //open/close modal one
+
+   var color = "#33b4eb";
    var style1 = $('#myModal').css("display");
    $('#myBtn').on("click", function () {
       if (style1 == "none") {
          $('.modal').fadeIn();
          style1 = "block";
+         console.log(color);
+         if (style1 == "block") {
+            $('.resumebtn').css("color", "#dd00ffe4");
+            $('.aboutbtn').css("color", "#dd00ffe4");
+            $('.portfoliobtn').css("color", color);
+         } else {
+            $('.portfoliobtn').css("color", "#dd00ffe4");
+         }
          $('.modal-two').fadeOut();
          style2 = "none";
          $('.modal-three').fadeOut();
@@ -37,7 +47,7 @@ $(function () {
       } else {
          $('.modal').fadeOut();
          style1 = "none";
-
+         $('.portfoliobtn').css("color", "#dd00ffe4");
       }
 
    });
@@ -48,6 +58,8 @@ $(function () {
       } else {
          $('.modal').fadeOut();
          style1 = "none";
+         $('.portfoliobtn').css("color", "#dd00ffe4");
+
       }
    });
 
@@ -55,6 +67,7 @@ $(function () {
       if (e.key === 'Escape') {
          $('.modal').fadeOut();
          style1 = "none";
+         $('.portfoliobtn').css("color", "#dd00ffe4");
       }
    });
 
@@ -65,6 +78,13 @@ $(function () {
       if (style2 == "none") {
          $('.modal-two').fadeIn();
          style2 = "block";
+         if (style2 == "block") {
+            $('.resumebtn').css("color", color);
+            $('.aboutbtn').css("color", "#dd00ffe4");
+            $('.portfoliobtn').css("color", "#dd00ffe4");
+         } else {
+            $('.resumebtn').css("color", "#dd00ffe4");
+         }
          $('.modal').fadeOut();
          style1 = "none";
          $('.modal-three').fadeOut();
@@ -72,6 +92,7 @@ $(function () {
       } else {
          $('.modal-two').fadeOut();
          style2 = "none";
+         $('.resumebtn').css("color", "#dd00ffe4");
       }
    });
    $('.close-two').on("click", function () {
@@ -81,12 +102,14 @@ $(function () {
       } else {
          $('.modal-two').fadeOut();
          style2 = "none";
+         $('.resumebtn').css("color", "#dd00ffe4");
       }
    });
    $(document).on('keydown', function (e) {
       if (e.key === 'Escape') {
          $('.modal-two').fadeOut();
          style2 = "none";
+         $('.resumebtn').css("color", "#dd00ffe4");
       }
    });
 
@@ -97,6 +120,13 @@ $(function () {
       if (style3 == "none") {
          $('.modal-three').fadeIn();
          style3 = "block";
+         if (style3 == "block") {
+            $('.aboutbtn').css("color", color);
+            $('.resumebtn').css("color", "#dd00ffe4");
+            $('.portfoliobtn').css("color", "#dd00ffe4");
+         } else {
+            $('.aboutbtn').css("color", "#dd00ffe4");
+         }
          $('.modal-two').fadeOut();
          style2 = "none";
          $('.modal').fadeOut();
@@ -104,6 +134,7 @@ $(function () {
       } else {
          $('.modal-three').fadeOut();
          style3 = "none";
+         $('.aboutbtn').css("color", "#dd00ffe4");
       }
    });
    $('.close-three').on("click", function () {
@@ -113,12 +144,14 @@ $(function () {
       } else {
          $('.modal-three').fadeOut();
          style3 = "none";
+         $('.aboutbtn').css("color", "#dd00ffe4");
       }
    });
    $(document).on('keydown', function (e) {
       if (e.key === 'Escape') {
          $('.modal-three').fadeOut();
          style3 = "none";
+         $('.aboutbtn').css("color", "#dd00ffe4");
       }
    });
 
