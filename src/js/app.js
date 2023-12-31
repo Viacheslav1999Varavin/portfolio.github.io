@@ -7,7 +7,7 @@ import Swiper from 'swiper';
 import { Navigation, Pagination } from 'swiper/modules';
 const swiper = new Swiper();
 
-
+// jquery code
 $(function () {
 
    //upward button
@@ -23,9 +23,7 @@ $(function () {
       $('.modal').animate({ scrollTop: 0 }, 600);
    });
 
-
-   //open/close modal one
-
+   //open/close and colors of modal one
    var color = "#33b4eb";
    var style1 = $('#myModal').css("display");
    $('#myBtn').on("click", function () {
@@ -49,7 +47,6 @@ $(function () {
          style1 = "none";
          $('.portfoliobtn').css("color", "#dd00ffe4");
       }
-
    });
    $('.close').on("click", function () {
       if (style1 == "none") {
@@ -62,7 +59,6 @@ $(function () {
 
       }
    });
-
    $(document).on('keydown', function (e) {
       if (e.key === 'Escape') {
          $('.modal').fadeOut();
@@ -72,7 +68,7 @@ $(function () {
    });
 
 
-   //open/close modal two
+   //open/close and colors of modal two
    var style2 = $('#myModal2').css("display");
    $('#myBtn2').on("click", function () {
       if (style2 == "none") {
@@ -114,7 +110,7 @@ $(function () {
    });
 
 
-   //open/close modal three
+   //open/close and colors of modal three
    var style3 = $('#myModal3').css("display");
    $('#myBtn3').on("click", function () {
       if (style3 == "none") {
@@ -154,8 +150,6 @@ $(function () {
          $('.aboutbtn').css("color", "#dd00ffe4");
       }
    });
-
-
 });
 
 

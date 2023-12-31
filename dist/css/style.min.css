@@ -184,7 +184,7 @@ body {
   color: red !important;
 }
 
-ul {
+.buttons-block {
   margin-left: 260px;
   width: 0;
   display: flex;
@@ -204,10 +204,7 @@ button {
 
 .list-link:hover {
   cursor: pointer;
-  color: #33b4eb;
-}
-.list-link:hover:active {
-  color: #00fff7;
+  color: #00fff7 !important;
 }
 
 .git {
@@ -363,18 +360,20 @@ hr {
 }
 
 .modal-two {
+  box-shadow: 5px 0px 60px 22px #33b4eb;
   display: none;
   position: fixed;
   z-index: 1;
   left: 50;
   top: 0;
-  width: 60%;
+  width: 62%;
   height: 75%;
   margin: 10% 0% 15% 20%;
   overflow: auto;
 }
 
 .modal-content-two {
+  height: 100%;
   background-color: rgba(0, 255, 247, 0.4196078431);
   padding: 20px;
   border: 3px solid #00fff7;
@@ -417,18 +416,20 @@ hr {
 }
 
 .modal-three {
+  box-shadow: 5px 0px 60px 22px #33b4eb;
   display: none;
   position: fixed;
   z-index: 1;
   left: 50;
   top: 0;
-  width: 60%;
+  width: 62%;
   height: 75%;
   margin: 10% 0% 15% 20%;
   overflow: auto;
 }
 
 .modal-content-three {
+  height: 100%;
   background-color: rgba(0, 255, 247, 0.4196078431);
   padding: 20px;
   border: 3px solid #00fff7;
