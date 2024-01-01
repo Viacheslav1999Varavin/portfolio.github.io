@@ -1,5 +1,5 @@
 import * as flsFunctions from "./modules/functions.js";
-import $, { escapeSelector } from "jquery";
+import $ from "jquery";
 
 flsFunctions.isWebp();
 

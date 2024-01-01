@@ -105,7 +105,7 @@ body {
 }
 
 .nav-header a {
-  display: inline-block;
+  display: flex;
   width: 49px;
   margin-right: 20px;
   padding: 10px 0px 10px 0px;
@@ -172,7 +172,6 @@ body {
 }
 
 .menu-image img {
-  border-radius: 29% 50% 30% 60%;
   margin: 150px 0px 50px 220px;
 }
 
@@ -185,7 +184,7 @@ body {
 }
 
 .buttons-block {
-  margin-left: 260px;
+  margin-left: 240px;
   width: 0;
   display: flex;
   flex-direction: column;
@@ -202,7 +201,7 @@ button {
   background-color: rgba(0, 0, 0, 0);
 }
 
-.list-link:hover {
+button:hover {
   cursor: pointer;
   color: #00fff7 !important;
 }
@@ -234,9 +233,8 @@ button {
   border-radius: 50%;
 }
 
-.menu-image-face:hover {
+.menu-image-face {
   border: 2px solid #00fff7;
-  cursor: pointer;
   box-shadow: 5px 0px 60px 22px rgba(51, 180, 235, 0.6509803922);
 }
 
@@ -252,6 +250,7 @@ button {
   margin: 10% 0% 15% 20%;
   overflow: auto;
   border: 3px solid #00fff7;
+  text-align: center;
 }
 
 ::-webkit-scrollbar {
@@ -299,17 +298,12 @@ button {
   font-size: 15px;
   letter-spacing: 3px;
   color: rgba(0, 255, 247, 0.9019607843);
-  text-decoration: underline;
-  line-height: 28px;
+  line-height: 30px;
 }
 
 .p-img {
   width: 500px;
-  border-radius: 10%;
   height: 100%;
-}
-.p-img:hover {
-  border: 3px solid #00fff7;
 }
 
 hr {
@@ -326,7 +320,7 @@ hr {
   text-transform: uppercase;
   padding-top: 7px;
   font-size: 25px;
-  color: #000;
+  color: rgb(51, 180, 235);
   cursor: pointer;
 }
 .button:hover {
@@ -334,11 +328,8 @@ hr {
   background-color: rgba(251, 0, 255, 0.6862745098);
 }
 
-.portfolio-work {
-  position: relative;
-}
-.portfolio-work:hover::after {
-  content: "CHECK PREVIEW";
+.check {
+  opacity: 0.5;
   position: absolute;
   left: 20%;
   top: 50%;
@@ -349,14 +340,12 @@ hr {
   font-weight: 600;
   cursor: pointer;
 }
-.portfolio-work:hover::before {
-  content: "";
-  border: 3px solid #00fff7;
-  position: absolute;
-  border-radius: 10%;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.305);
+.check:hover {
+  opacity: 1;
+}
+
+.portfolio-work {
+  position: relative;
 }
 
 .modal-two {
@@ -392,10 +381,6 @@ hr {
   color: #00fff7;
 }
 
-.up {
-  position: relative;
-}
-
 .btn-top {
   display: none;
   background-color: rgba(0, 255, 247, 0.5725490196);
@@ -403,7 +388,7 @@ hr {
   width: 100px;
   height: 40px;
   bottom: -17px;
-  right: 500px;
+  right: 550px;
   border: 3px solid #00fff7;
   text-align: center;
   font-size: 15px;
