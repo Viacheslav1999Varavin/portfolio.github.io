@@ -6,4 +6,4 @@ npm i
 заполнить ftp параметры для запуска на сервер
 
 
-portfolio.github.io
+Settings/Pages/choose branch/(wait...)/get website.
